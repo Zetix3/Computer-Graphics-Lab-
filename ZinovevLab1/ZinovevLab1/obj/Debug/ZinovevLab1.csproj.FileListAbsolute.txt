@@ -19,3 +19,13 @@ D:\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.csproj.GenerateResource.cache
 D:\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.csproj.CoreCompileInputs.cache
 D:\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.exe
 D:\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.pdb
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\bin\Debug\ZinovevLab1.exe.config
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\bin\Debug\ZinovevLab1.exe
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\bin\Debug\ZinovevLab1.pdb
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.csproj.AssemblyReference.cache
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.Form1.resources
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.Properties.Resources.resources
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.csproj.GenerateResource.cache
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.csproj.CoreCompileInputs.cache
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.exe
+C:\Users\s24380327\source\repos\Computer-Graphics-Lab-\ZinovevLab1\ZinovevLab1\obj\Debug\ZinovevLab1.pdb

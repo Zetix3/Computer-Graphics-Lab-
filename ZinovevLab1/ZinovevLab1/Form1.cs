@@ -13,6 +13,7 @@ namespace ZinovevLab1
     public partial class Form1 : Form
     {
         Bitmap image;
+        Stack<Image> st = new Stack<Image>();
         public Form1()
         {
             InitializeComponent();
@@ -38,14 +39,20 @@ namespace ZinovevLab1
         private void инверсияToolStripMenuItem_Click(object sender, EventArgs e)
         {
            Filters filter = new InvertFilter();
+           
            backgroundWorker1.RunWorkerAsync(filter);
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
+            
             Bitmap newImage = ((Filters)e.Argument).processImage(image, backgroundWorker1);
             if (backgroundWorker1.CancellationPending != true)
+            {
+                Image imageCopy = new Bitmap(image);
+                st.Push(imageCopy);
                 image = newImage;
+            }
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
@@ -60,8 +67,10 @@ namespace ZinovevLab1
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
+
             if (!e.Cancelled)
             {
+                
                 pictureBox1.Image = image;
                 pictureBox1.Refresh();
             }
@@ -113,6 +122,36 @@ namespace ZinovevLab1
         {
             Filters filter = new SharpnessFilter();
             backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "Image files|*.png;*.jpg;*.bmp|All files(*.*)|*.*";
+            dialog.DefaultExt = "png";
+            dialog.AddExtension = true;
+            dialog.FileName = "image.png";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    image.Save(dialog.FileName);
+                }
+                catch (Exception ex) {
+                    MessageBox.Show($"Ошибка при сохранении: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
+        }
+
+        private void отменитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (st.Count > 0)
+            {
+                Image imageCopy = st.Pop();
+                pictureBox1.Image = imageCopy;
+                pictureBox1.Refresh();
+            }
         }
     }
 }
