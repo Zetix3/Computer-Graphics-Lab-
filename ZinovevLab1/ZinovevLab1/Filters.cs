@@ -214,8 +214,8 @@ namespace ZinovevLab1
         {
             int x0 = sourceImage.Width / 2;
             int y0 = sourceImage.Height / 2;
-            int xx = (int)((x - x0)*Math.Cos(Math.PI / 4) - (y - y0)*Math.Sin(Math.PI / 6) + x0);
-            int yy = (int)((x - x0) * Math.Sin(Math.PI / 4) + (y - y0) * Math.Cos(Math.PI / 6) + y0);
+            int xx = (int)((x - x0)*Math.Cos(Math.PI / 4) - (y - y0)*Math.Sin(Math.PI / 4) + x0);
+            int yy = (int)((x - x0) * Math.Sin(Math.PI / 4) + (y - y0) * Math.Cos(Math.PI / 4) + y0);
 
             if (xx < 0 || xx >= sourceImage.Width || yy < 0 || yy >= sourceImage.Height)
             {
@@ -317,24 +317,42 @@ namespace ZinovevLab1
             float gxR = 0, gyR = 0;
             float gxG = 0, gyG = 0;
             float gxB = 0, gyB = 0;
+            int resultR = 0, resultG = 0, resultB = 0;
+            Color lastColor = sourceImage.GetPixel(Clamp(x - radiusX, 0, sourceImage.Width - 1), Clamp(y - radiusY, 0, sourceImage.Height - 1));
             for (int l = -radiusY; l <= radiusY; l++)
                 for (int k = -radiusX; k <= radiusX; k++)
                 {
+                    if (x + k < 0) continue;
+                    if (y + k < 0) continue;
+                    if(x + k > sourceImage.Width) continue;
+                    if(y + k > sourceImage.Height) continue;
                     int idX = Clamp(x + k, 0, sourceImage.Width - 1);
                     int idY = Clamp(y + k, 0, sourceImage.Height - 1);
                     Color neighborColor = sourceImage.GetPixel(idX, idY);
-                    gxR += neighborColor.R * kernelX[k + radiusX, l + radiusY];
-                    gxG += neighborColor.G * kernelX[k + radiusX, l + radiusY];
-                    gxB += neighborColor.B * kernelX[k + radiusX, l + radiusY];
-
-                    gyR += neighborColor.R * kernelY[k + radiusX, l + radiusY];
-                    gyG += neighborColor.G * kernelY[k + radiusX, l + radiusY];
-                    gyB += neighborColor.B * kernelY[k + radiusX, l + radiusY];
+                    if(neighborColor == lastColor && lastColor == Color.Black) continue;
+                    
+                    if (neighborColor.R != 0)
+                    {
+                        gxR += neighborColor.R * kernelX[k + radiusX, l + radiusY];
+                        gyR += neighborColor.R * kernelY[k + radiusX, l + radiusY];
+                    }
+                    if (neighborColor.G != 0)
+                    {
+                        gxG += neighborColor.G * kernelX[k + radiusX, l + radiusY];
+                        gyG += neighborColor.G * kernelY[k + radiusX, l + radiusY];
+                    }
+                    if (neighborColor.B != 0)
+                    {
+                        gxB += neighborColor.B * kernelX[k + radiusX, l + radiusY];
+                        gyB += neighborColor.B * kernelY[k + radiusX, l + radiusY];
+                    }
+                    lastColor = neighborColor;
 
                 }
-            int resultR = Clamp((int)Math.Sqrt(gxR * gxR + gyR * gyR), 0, 255);
-            int resultG = Clamp((int)Math.Sqrt(gxG * gxG + gyG * gyG), 0, 255);
-            int resultB = Clamp((int)Math.Sqrt(gxB * gxB + gyB * gyB), 0, 255);
+            if (!(gxR == 0 && gyR == 0)) resultR = Clamp((int)Math.Sqrt(gxR * gxR + gyR * gyR), 0, 255);
+            if (!(gxG == 0 && gyG == 0)) resultG = Clamp((int)Math.Sqrt(gxG * gxG + gyG * gyG), 0, 255);
+            if (!(gxB == 0 && gyB == 0)) resultB = Clamp((int)Math.Sqrt(gxB * gxB + gyB * gyB), 0, 255);
+
             return Color.FromArgb(resultR, resultG, resultB);
         }
     }
