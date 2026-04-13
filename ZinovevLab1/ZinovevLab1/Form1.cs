@@ -248,6 +248,13 @@ namespace ZinovevLab1
             Filters filter = new MedianFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+        private void диагональныйФильтрToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new DiagonalFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+
 
         private void точечныеToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -271,6 +278,7 @@ namespace ZinovevLab1
             }
         }
 
+        
     }
 
     public class KernelInputForm : Form

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Schema;
 
 namespace ZinovevLab1
 {
@@ -44,6 +45,11 @@ namespace ZinovevLab1
                                              255 -  sourceColor.G,
                                              255 - sourceColor.B);
             return resultColor;
+        }
+
+        public Color calculateTmpPixelColor(Bitmap sourceImage, int x, int y)
+        {
+            return calculateNewPixelColor((Bitmap)sourceImage, x, y);
         }
     }
 
@@ -227,6 +233,7 @@ namespace ZinovevLab1
         }
     }
 
+
     class MatrixFilter : Filters
     {
         protected float[,] kernel = null;
@@ -354,6 +361,11 @@ namespace ZinovevLab1
             if (!(gxB == 0 && gyB == 0)) resultB = Clamp((int)Math.Sqrt(gxB * gxB + gyB * gyB), 0, 255);
 
             return Color.FromArgb(resultR, resultG, resultB);
+        }
+
+        public Color calculateTmpPixelColor(Bitmap sourceImage, int x, int y)
+        {
+            return calculateNewPixelColor((Bitmap)sourceImage, x, y);
         }
     }
 
@@ -693,4 +705,27 @@ namespace ZinovevLab1
             return medianColor;
         }
     }
+
+    class DiagonalFilter : MatrixFilter
+    {
+        protected override Color calculateNewPixelColor(Bitmap sourceImage, int x, int y)
+        {
+            InvertFilter invfil = new InvertFilter();
+            SobelFilter sobfil = new SobelFilter();
+            if (x > y && Math.Max(sourceImage.Height - 1 - x, sourceImage.Width - 1 - x) > y)
+            {
+                return invfil.calculateTmpPixelColor(sourceImage, x, y);
+            }
+            else if (x < y && Math.Max(sourceImage.Height - 1 - x, sourceImage.Width - 1 - x) < y)
+            {
+                return invfil.calculateTmpPixelColor(sourceImage, x, y);
+            }
+            else
+            {   
+
+                return sobfil.calculateTmpPixelColor(sourceImage, x, y);
+            }
+        }
+    }
 }
+
