@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Tomogram.cs",
-              "DocumentMoniker": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\Zinovev_tomogram_visualizer\\Zinovev_tomogram_visualizer\\Tomogram.cs",
-              "RelativeDocumentMoniker": "Zinovev_tomogram_visualizer\\Tomogram.cs",
-              "ToolTip": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\Zinovev_tomogram_visualizer\\Zinovev_tomogram_visualizer\\Tomogram.cs",
-              "RelativeToolTip": "Zinovev_tomogram_visualizer\\Tomogram.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAuwGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T14:25:56.909Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -45,9 +32,22 @@
               "RelativeDocumentMoniker": "Zinovev_tomogram_visualizer\\Form1.cs",
               "ToolTip": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\Zinovev_tomogram_visualizer\\Zinovev_tomogram_visualizer\\Form1.cs",
               "RelativeToolTip": "Zinovev_tomogram_visualizer\\Form1.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAD4vxYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwEAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T14:20:30.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tomogram.cs",
+              "DocumentMoniker": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\Zinovev_tomogram_visualizer\\Zinovev_tomogram_visualizer\\Tomogram.cs",
+              "RelativeDocumentMoniker": "Zinovev_tomogram_visualizer\\Tomogram.cs",
+              "ToolTip": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\Zinovev_tomogram_visualizer\\Zinovev_tomogram_visualizer\\Tomogram.cs",
+              "RelativeToolTip": "Zinovev_tomogram_visualizer\\Tomogram.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T14:25:56.909Z",
               "EditorCaption": ""
             },
             {
