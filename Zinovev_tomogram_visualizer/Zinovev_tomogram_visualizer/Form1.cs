@@ -50,12 +50,27 @@ namespace Zinovev_tomogram_visualizer
                 glControl1.Invalidate();
             }
         }
-
+        bool needReload = false;
+        bool quadsMode = true;
         private void glControl1_Paint(object sender, PaintEventArgs e)
         {
             if (loaded)
             {
-                ViewObject.DrawQuads(currentLayer);
+                if (quadsMode)
+                {
+                    ViewObject.DrawQuads(currentLayer);
+                }
+                else 
+                { 
+                    if (needReload)
+                    {
+                        ViewObject.generateTextureImage(currentLayer);
+                        ViewObject.Load2DTexture();
+                        needReload = false;
+                    }
+
+                    ViewObject.DrawTexture();
+                }
                 glControl1.SwapBuffers();
             }
 
@@ -64,6 +79,7 @@ namespace Zinovev_tomogram_visualizer
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             currentLayer = trackBar1.Value;
+            needReload = true;
         }
 
         void Application_Idle(object sender, EventArgs e)
@@ -87,6 +103,22 @@ namespace Zinovev_tomogram_visualizer
                 FrameCount = 0;
             }
             FrameCount++;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                quadsMode = true;
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                quadsMode = false;
+            }
         }
     }
 }
