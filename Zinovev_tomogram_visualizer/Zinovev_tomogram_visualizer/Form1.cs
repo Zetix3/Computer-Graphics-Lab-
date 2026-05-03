@@ -51,16 +51,16 @@ namespace Zinovev_tomogram_visualizer
             }
         }
         bool needReload = false;
-        bool quadsMode = true;
+        int mode = 0;
         private void glControl1_Paint(object sender, PaintEventArgs e)
         {
             if (loaded)
             {
-                if (quadsMode)
+                if (mode == 0)
                 {
                     ViewObject.DrawQuads(currentLayer);
                 }
-                else 
+                else if (mode == 1) 
                 { 
                     if (needReload)
                     {
@@ -71,6 +71,11 @@ namespace Zinovev_tomogram_visualizer
 
                     ViewObject.DrawTexture();
                 }
+                else if (mode == 2)
+                {
+                    ViewObject.DrawQuadStrip(currentLayer);
+                }
+
                 glControl1.SwapBuffers();
             }
 
@@ -109,7 +114,7 @@ namespace Zinovev_tomogram_visualizer
         {
             if (radioButton1.Checked)
             {
-                quadsMode = true;
+                mode = 0;
             }
         }
 
@@ -117,8 +122,34 @@ namespace Zinovev_tomogram_visualizer
         {
             if (radioButton2.Checked)
             {
-                quadsMode = false;
+                mode = 1;
             }
         }
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked)
+            {
+                mode = 2;
+            }
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            ViewObject.min = trackBar2.Value;
+
+            int weight = trackBar3.Value;
+            ViewObject.max = ViewObject.min + weight;
+
+            needReload = true;
+        }
+
+        private void trackBar3_Scroll(object sender, EventArgs e)
+        {
+            int weight = trackBar3.Value;
+            ViewObject.max = weight + ViewObject.min;
+            needReload = true;
+        }
+
+        
     }
 }

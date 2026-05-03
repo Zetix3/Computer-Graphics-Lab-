@@ -61,11 +61,11 @@ namespace Zinovev_tomogram_visualizer
             GL.Ortho(0, Bin.X, 0, Bin.Y, -1, 1);
             GL.Viewport(0, 0, width, height);
         }
-
+        public int min = 0;
+        public int max = 2000;
         Color TransferFunction(short value)
         {
-            int min = 0;
-            int max = 2000;
+            if (max <= min) return Color.FromArgb(255, 0, 0, 0);
             int newVal = Clamp((value - min) * 255 / (max - min), 0, 255);
             return Color.FromArgb(255, newVal, newVal, newVal);
         }
@@ -99,6 +99,29 @@ namespace Zinovev_tomogram_visualizer
                     GL.Vertex2(x_coords + 1, y_coords);
                 }
             GL.End();
+        }
+
+        public void DrawQuadStrip(int layerNumber)
+        {
+            GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+            short value;
+            for (int y = 0; y < Bin.Y - 1; y++)
+            {
+                GL.Begin(BeginMode.QuadStrip);
+
+                for (int x = 0; x < Bin.X; x++)
+                {
+                    value = Bin.array[x + y * Bin.X + layerNumber * Bin.X * Bin.Y];
+                    GL.Color3(TransferFunction(value));
+                    GL.Vertex2(x, y);
+                    
+                    value = Bin.array[x + (y + 1) * Bin.X + layerNumber * Bin.X * Bin.Y];
+                    GL.Color3(TransferFunction(value));
+                    GL.Vertex2(x, y + 1);
+                }
+
+                GL.End();
+            }
         }
 
         Bitmap textureImage;
