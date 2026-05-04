@@ -70,6 +70,13 @@ namespace Zinovev_tomogram_visualizer
             return Color.FromArgb(255, newVal, newVal, newVal);
         }
 
+        Color ConstTransferFunction(short value)
+        {
+            int newVal = Clamp(value * 255 / 2000, 0, 255);
+            return Color.FromArgb(255, newVal, newVal, newVal);
+        }
+
+        
         public void DrawQuads(int layerNumber)
         {
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
@@ -101,6 +108,38 @@ namespace Zinovev_tomogram_visualizer
             GL.End();
         }
 
+        public void DrawHalfTF(int layerNumber)
+        {
+            GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+            short value;
+            for (int y = 0; y < Bin.Y - 1; y++)
+            {
+                GL.Begin(BeginMode.QuadStrip);
+
+                for (int x = 0; x < (Bin.X/2); x++)
+                {
+                    value = Bin.array[x + y * Bin.X + layerNumber * Bin.X * Bin.Y];
+                    GL.Color3(TransferFunction(value));
+                    GL.Vertex2(x, y);
+
+                    value = Bin.array[x + (y + 1) * Bin.X + layerNumber * Bin.X * Bin.Y];
+                    GL.Color3(TransferFunction(value));
+                    GL.Vertex2(x, y + 1);
+                }
+
+                for (int x = Bin.X / 2; x < Bin.X; x++)
+                {
+                    value = Bin.array[x + y * Bin.X + layerNumber * Bin.X * Bin.Y];
+                    GL.Color3(ConstTransferFunction(value));
+                    GL.Vertex2(x, y);
+
+                    value = Bin.array[x + (y + 1) * Bin.X + layerNumber * Bin.X * Bin.Y];
+                    GL.Color3(ConstTransferFunction(value));
+                    GL.Vertex2(x, y + 1);
+                }
+                GL.End();
+            }
+        }
         public void DrawQuadStrip(int layerNumber)
         {
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
@@ -123,6 +162,8 @@ namespace Zinovev_tomogram_visualizer
                 GL.End();
             }
         }
+
+        
 
         Bitmap textureImage;
         int VBOtexture;

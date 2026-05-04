@@ -75,8 +75,11 @@ namespace Zinovev_tomogram_visualizer
                 {
                     ViewObject.DrawQuadStrip(currentLayer);
                 }
-
-                glControl1.SwapBuffers();
+                else if (mode == 3)
+                {
+                    ViewObject.DrawHalfTF(currentLayer);
+                }
+                    glControl1.SwapBuffers();
             }
 
         }
@@ -150,6 +153,12 @@ namespace Zinovev_tomogram_visualizer
             needReload = true;
         }
 
-        
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton4.Checked)
+            {
+                mode = 3;
+            }
+        }
     }
 }
