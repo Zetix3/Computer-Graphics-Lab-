@@ -20,6 +20,9 @@ namespace ZinovevLab33
         int BasicFragmentShader;
         int vbo_position;
         int attribute_vpos;
+        int uniform_resolution;
+        int uniform_depth;
+        public int depth_value = 1;
 
         void loadShader(String filename, ShaderType type, int program, out int address)
         {
@@ -45,8 +48,8 @@ namespace ZinovevLab33
             GL.GetProgram(BasicProgramID, GetProgramParameterName.LinkStatus, out status);
             Console.WriteLine(GL.GetProgramInfoLog(BasicProgramID));
             attribute_vpos = GL.GetAttribLocation(BasicProgramID, "vPosition");
-            //int uniform_pos = GL.GetUniformLocation(BasicProgramID, "uCameraPos");
-            //int uniform_aspect = GL.GetUniformLocation(BasicProgramID, "uAspect");
+            uniform_resolution = GL.GetUniformLocation(BasicProgramID, "uResolution");
+            uniform_depth = GL.GetUniformLocation(BasicProgramID, "uDepth");
 
             Vector3[] vertdata = new Vector3[] {
             new Vector3(-1f, -1f, 0f),
@@ -60,18 +63,23 @@ namespace ZinovevLab33
             Vector3.SizeInBytes), vertdata, BufferUsageHint.StaticDraw);
             GL.EnableVertexAttribArray(attribute_vpos);
             GL.VertexAttribPointer(attribute_vpos, 3, VertexAttribPointerType.Float, false, 0, 0);
-            //GL.Uniform3(uniform_pos, campos);
-            //GL.Uniform1(uniform_aspect, aspect);
+            
         }
 
         public void Draw()
         {
             GL.UseProgram(BasicProgramID);
-
+            GL.Uniform1(uniform_depth, depth_value);
             GL.DrawArrays(PrimitiveType.TriangleFan, 0, 4);
             GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
         }
 
+        public void UpdateResolution(int width, int height)
+        {
+            GL.UseProgram(BasicProgramID);
+            GL.Uniform2(uniform_resolution, (float)width, (float)height);  
+            GL.UseProgram(0);
+        }
 
     }
     internal class RayTracing

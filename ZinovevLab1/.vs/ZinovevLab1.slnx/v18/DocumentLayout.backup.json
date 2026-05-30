@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2021812F-0DE8-47F5-90C4-B46693F646B3}|ZinovevLab1\\ZinovevLab1.csproj|C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab1\\zinovevlab1\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2021812F-0DE8-47F5-90C4-B46693F646B3}|ZinovevLab1\\ZinovevLab1.csproj|solutionrelative:zinovevlab1\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2021812F-0DE8-47F5-90C4-B46693F646B3}|ZinovevLab1\\ZinovevLab1.csproj|c:\\users\\s24380327\\source\\repos\\computer-graphics-lab-\\zinovevlab1\\zinovevlab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2021812F-0DE8-47F5-90C4-B46693F646B3}|ZinovevLab1\\ZinovevLab1.csproj|C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab1\\zinovevlab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2021812F-0DE8-47F5-90C4-B46693F646B3}|ZinovevLab1\\ZinovevLab1.csproj|solutionrelative:zinovevlab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2021812F-0DE8-47F5-90C4-B46693F646B3}|ZinovevLab1\\ZinovevLab1.csproj|C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab1\\zinovevlab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2021812F-0DE8-47F5-90C4-B46693F646B3}|ZinovevLab1\\ZinovevLab1.csproj|solutionrelative:zinovevlab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2021812F-0DE8-47F5-90C4-B46693F646B3}|ZinovevLab1\\ZinovevLab1.csproj|c:\\users\\s24380327\\source\\repos\\computer-graphics-lab-\\zinovevlab1\\zinovevlab1\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2021812F-0DE8-47F5-90C4-B46693F646B3}|ZinovevLab1\\ZinovevLab1.csproj|solutionrelative:zinovevlab1\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab1\\ZinovevLab1\\Form1.cs",
               "RelativeDocumentMoniker": "ZinovevLab1\\Form1.cs",
               "ToolTip": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab1\\ZinovevLab1\\Form1.cs",
               "RelativeToolTip": "ZinovevLab1\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPoAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAIgBAAAAAAAAAAAcwPoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-14T13:11:01.201Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Filters.cs",
               "DocumentMoniker": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab1\\ZinovevLab1\\Filters.cs",
               "RelativeDocumentMoniker": "ZinovevLab1\\Filters.cs",
@@ -52,14 +52,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab1\\ZinovevLab1\\Form1.cs",
               "RelativeDocumentMoniker": "ZinovevLab1\\Form1.cs",
               "ToolTip": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab1\\ZinovevLab1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "ZinovevLab1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T14:12:37.214Z"
+              "WhenOpened": "2026-03-01T14:12:37.214Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             }
           ]
         }

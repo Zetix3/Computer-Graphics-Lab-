@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab3\\",
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|c:\\users\\s24380327\\source\\repos\\computer-graphics-lab-\\zinovevlab3\\zinovevlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|solutionrelative:zinovevlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\desktop\\computergraphics\\zinovevlab3\\zinovevlab3\\raytracing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|solutionrelative:zinovevlab3\\raytracing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|c:\\users\\s24380327\\source\\repos\\computer-graphics-lab-\\zinovevlab3\\zinovevlab3\\raytracing.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|solutionrelative:zinovevlab3\\raytracing.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|c:\\users\\s24380327\\source\\repos\\computer-graphics-lab-\\zinovevlab3\\zinovevlab3\\raytracing.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\zinovevlab3\\raytracing.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|solutionrelative:zinovevlab3\\raytracing.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|c:\\users\\s24380327\\source\\repos\\computer-graphics-lab-\\zinovevlab3\\zinovevlab3\\raytracing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|solutionrelative:zinovevlab3\\raytracing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\zinovevlab3\\raytracing.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|solutionrelative:zinovevlab3\\raytracing.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\zinovevlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|solutionrelative:zinovevlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\zinovevlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{744758E8-0831-4C95-95A8-33EB7ED84936}|ZinovevLab3\\ZinovevLab3.csproj|solutionrelative:zinovevlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,50 +34,63 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "raytracing.frag",
-              "DocumentMoniker": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab3\\ZinovevLab3\\raytracing.frag",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\raytracing.frag",
               "RelativeDocumentMoniker": "ZinovevLab3\\raytracing.frag",
-              "ToolTip": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab3\\ZinovevLab3\\raytracing.frag",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\raytracing.frag",
               "RelativeToolTip": "ZinovevLab3\\raytracing.frag",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-18T14:27:59.727Z",
+              "WhenOpened": "2026-05-24T09:50:25.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "raytracing.vert",
-              "DocumentMoniker": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab3\\ZinovevLab3\\raytracing.vert",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\raytracing.vert",
               "RelativeDocumentMoniker": "ZinovevLab3\\raytracing.vert",
-              "ToolTip": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab3\\ZinovevLab3\\raytracing.vert",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\raytracing.vert",
               "RelativeToolTip": "ZinovevLab3\\raytracing.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-18T14:27:39.449Z",
+              "WhenOpened": "2026-05-24T09:22:51.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\Form1.cs",
+              "RelativeDocumentMoniker": "ZinovevLab3\\Form1.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\Form1.cs",
+              "RelativeToolTip": "ZinovevLab3\\Form1.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA9wBUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T09:12:31.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RayTracing.cs",
-              "DocumentMoniker": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab3\\ZinovevLab3\\RayTracing.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\RayTracing.cs",
               "RelativeDocumentMoniker": "ZinovevLab3\\RayTracing.cs",
-              "ToolTip": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab3\\ZinovevLab3\\RayTracing.cs",
-              "RelativeToolTip": "ZinovevLab3\\RayTracing.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAqwCIAAAAaAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\RayTracing.cs*",
+              "RelativeToolTip": "ZinovevLab3\\RayTracing.cs*",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowFAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-18T13:54:29.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab3\\ZinovevLab3\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\Form1.cs",
               "RelativeDocumentMoniker": "ZinovevLab3\\Form1.cs",
-              "ToolTip": "C:\\Users\\s24380327\\source\\repos\\Computer-Graphics-Lab-\\ZinovevLab3\\ZinovevLab3\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\Desktop\\ComputerGraphics\\ZinovevLab3\\ZinovevLab3\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "ZinovevLab3\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-18T13:52:27.251Z",

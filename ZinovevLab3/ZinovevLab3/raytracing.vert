@@ -1,4 +1,5 @@
-in vec3 vPosition; //¬ходные переменные vPosition - позици€ вершины 
+#version 430 core
+in vec3 vPosition; 
 out vec3 glPosition; 
 void main (void) 
 { 
